@@ -26,7 +26,7 @@
 	</script>
 </head>
 <body>
-<header><a href="/"><img src="img/logo.png" id="logo_img"></a></header>
+<header><a href="/"><img src="{{asset('img/logo.png')}}" id="logo_img"></a></header>
 	<div id="main-container">
 
 		<nav class="clearfix">

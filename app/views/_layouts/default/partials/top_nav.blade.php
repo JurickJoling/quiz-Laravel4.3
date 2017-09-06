@@ -1,7 +1,7 @@
 <header>
   <nav>
     <div id="logo">
-      <a href="/"><img src="img/logo.png"></a>
+      <a href="/"><img src="{{asset('img/logo.png')}}" id="logo_img"></a>
     </div>
 
     <div id="links" class="clearfix">
