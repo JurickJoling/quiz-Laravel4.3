@@ -7,7 +7,7 @@
   their knowledge in different subjects">
   <meta name="keywords" content="Laravel,Quiz,dimitar032,Open Source Platform">
   <link rel="author" href="http://github.com/dimitar032">
-  <title>Laravel Quiz -
+  <title>Tesla Deal Alert -
     @section('title')
     @show
   </title>
@@ -17,6 +17,7 @@
    @section('specific-page-addons')@show
 </head>
     <body>
+      <!-- <header><a href="/"><img src="img/logo.png"></a></header> -->
       <div id="main-container">
         @include('_layouts.default.partials.top_nav')
 

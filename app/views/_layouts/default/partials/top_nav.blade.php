@@ -1,14 +1,14 @@
 <header>
   <nav>
     <div id="logo">
-      <a href="/">Laravel Quiz</a>
+      <a href="/"><img src="img/logo.png"></a>
     </div>
 
     <div id="links" class="clearfix">
       <ul>
        @if(checkForTeacherRights())
-           <li>{{link_to_route('createExam','Create a new test')}}</li>
-           <li>{{link_to_route('createSubject','Create a new subject')}}</li>
+           <li>{{link_to_route('createExam','Create a new features')}}</li>
+           <li>{{link_to_route('createSubject','Create a new model')}}</li>
        @endif
            <li><a href="/">{{{$currentUser->fname}}} &or;</a>
                 <ul id="drop-down">

@@ -14,7 +14,7 @@ class UserTableSeeder extends Seeder
             'fname'=>'admin',
             'lname'=>'admin',
             'email'=>'admin@admin.com',
-            'faculty_number'=>'1111111111',
+            'phone_number'=>'1111111111',
             'status'=>'3',
             'password'=>Hash::make('admin'),
 
@@ -23,7 +23,7 @@ class UserTableSeeder extends Seeder
             'fname'=>'teacher',
             'lname'=>'teacher',
             'email'=>'teacher@teacher.com',
-            'faculty_number'=>'1111111112',
+            'phone_number'=>'1111111112',
             'status'=>'2',
             'password'=>Hash::make('teacher')
         ]);
@@ -31,7 +31,7 @@ class UserTableSeeder extends Seeder
             'fname' => 'student',
             'lname' => 'student',
             'email' => 'student@student.com',
-            'faculty_number' => '1111111113',
+            'phone_number' => '1111111113',
             'status' => '1',
             'password' => Hash::make('student')
         ]);

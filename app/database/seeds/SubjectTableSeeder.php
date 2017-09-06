@@ -11,19 +11,11 @@ class SubjectTableSeeder extends Seeder
     public function run()
     {
         Subject::create([
-            'subject_name' => 'Informatics',
+            'subject_name' => 'Model S',
             'user_id' => '2',
         ]);
         Subject::create([
-            'subject_name' => 'Mathematics',
-            'user_id' => '2',
-        ]);
-        Subject::create([
-            'subject_name' => 'Physics',
-            'user_id' => '2',
-        ]);
-        Subject::create([
-            'subject_name' => 'Biology',
+            'subject_name' => 'Model X',
             'user_id' => '2',
         ]);
     }

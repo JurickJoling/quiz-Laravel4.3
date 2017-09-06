@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Laravel Quiz - Welcome</title>
+	<title>Tesla Deal Alert - Welcome</title>
     <link href="{{asset('css/main/guest_style.css')}}" rel="stylesheet" type="text/css">
     <script src="{{asset('js/jquery/jquery.js')}}"></script>
 	<script>
@@ -26,9 +26,8 @@
 	</script>
 </head>
 <body>
-
+<header><a href="/"><img src="img/logo.png" id="logo_img"></a></header>
 	<div id="main-container">
-
 
 		<nav class="clearfix">
 			<h2 id="login-button">Login</h2>
@@ -53,9 +52,9 @@
                 {{Form::text('email',null, array('placeholder'=>'Email address'))}}
             </div>
 
-           <!--  <div class="form-group">
-                {{Form::text('faculty_number',null, array('placeholder'=>'Faculty Number'))}}
-            </div> -->
+            <div class="form-group">
+                {{Form::text('phone_number',null, array('placeholder'=>'Cell Phone Number'))}}
+            </div>
 
             <div class="form-group">
                 {{Form::password('password' ,array('placeholder'=>'Password'))}}

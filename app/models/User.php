@@ -21,7 +21,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface
         'user_id',
         'username',
         'email',
-        // 'faculty_number',
+        'phone_number',
         'status',
         'password',
         'remember_token',
@@ -37,7 +37,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface
         'fname' => 'required|min:2|max:255|string',
         'lname' => 'required|min:2|max:255|string',
         'email' => 'required|min:2|max:255|email|unique:users,email',
-        // 'faculty_number' => 'required|integer|numeric|unique:users,faculty_number|digits:10',
+        'phone_number' => 'required|integer|numeric|unique:users,phone_number|digits:10',
         'password' => 'required|min:2|max:120',
         'password_confirmation' => 'required|same:password',
     );

@@ -304,12 +304,12 @@ header {
 }
 
 #logo a {
-    background: url(../../img/logo-blue.png) no-repeat;
+   /* background: url(../../img/logo-blue.png) no-repeat;
     text-indent: -9999px;
     float: left;
     width: 212px;
     height: 36px;
-    margin: 13px 0 13px 240px;
+    margin: 13px 0 13px 240px;*/
 
 }
 
@@ -889,4 +889,10 @@ ul.responses li {
 
 .quizResultsCopy {
     display: none;
+}
+/*header{
+    text-align: center;
+}*/
+#logo_img{
+    width: 40%;
 }

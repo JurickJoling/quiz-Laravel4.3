@@ -53,7 +53,7 @@ class UserController extends \BaseController
             $user->fname = $data['fname'];
             $user->lname = $data['lname'];
             $user->email = $data['email'];
-            // $user->faculty_number = $data['faculty_number'];
+            $user->phone_number = $data['phone_number'];
             $user->password = Hash::make($data['password']);
             $user->remember_token = $data['_token'];
             $user->save();

@@ -18,7 +18,7 @@ class CreateTableUsers extends Migration
             $table->string('fname');
             $table->string('lname');
             $table->string('email')->unique();
-            $table->integer('faculty_number')->unique()->unsigned();
+            $table->integer('phone_number')->unique()->unsigned();
             $table->tinyInteger('status')->unsigned()->default(1);
             $table->string('password', 60);
             $table->rememberToken();
