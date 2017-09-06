@@ -5,9 +5,9 @@
 @stop
 
 @section('content')
-    <section id="section-banner">
+    <!-- <section id="section-banner">
        <h1>All exams</h1>
-    </section>
+    </section> -->
 
     @include('flash::message')
 

@@ -214,7 +214,7 @@ svg {
 */
 
 body {
-    background-image: url("../../img/website_content.png");
+    /*background-image: url("../../img/website_content.png");*/
     font-family: 'Myriad Pro', sans-serif;
 }
 
@@ -316,13 +316,14 @@ header {
 #links {
     float: right;
     margin: 21px 240px 17px 0;
+    padding: 15px 0;
 }
 
 #links ul li a {
     padding: 12.5px;
     margin: 12.5px;
     font-size: 18px;
-    color: #40adb8;
+    color: #000000;
 }
 
 #drop-down {
@@ -331,8 +332,8 @@ header {
 
 #links ul li a:hover {
     padding: 11.5px;
-    color: #0091a0;
-    border: 1px solid #0091a0;
+    color: rgb(204, 0, 0);
+    border: 1px solid rgb(204, 0, 0);
     border-radius: 8px;
 }
 
@@ -343,7 +344,8 @@ header {
 #drop-down {
     display: none;
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: white;
+    margin-top: 21px;
 }
 
 #drop-down li a {
@@ -895,4 +897,25 @@ ul.responses li {
 }*/
 #logo_img{
     width: 40%;
+}
+header nav{
+    text-align: center;
+}
+.container .row .col-lg-12{
+    text-align: center;
+    margin: 50px auto;
+}
+
+.btn-sq-lg {
+  width: 150px !important;
+  height: 150px !important;
+  border: 1px solid black;
+  font-size: 15px;
+  margin: 0 25px;
+  color: black;
+
+}
+.btn-sq-lg img{
+    width: 90px;
+    margin: 0 auto;
 }

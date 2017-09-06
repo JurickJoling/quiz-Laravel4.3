@@ -26,6 +26,11 @@ Route::get('/', [
     'uses' => 'UserController@index'
 ]);
 
+Route::get('/model', [
+    'as' => 'selectModel',
+    'uses' => 'UserController@selectModel'
+]);
+
 Route::pattern('id', '[0-9]+');
 Route::pattern('mark', '[2-6]');
 

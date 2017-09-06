@@ -7,13 +7,20 @@
   their knowledge in different subjects">
   <meta name="keywords" content="Laravel,Quiz,dimitar032,Open Source Platform">
   <link rel="author" href="http://github.com/dimitar032">
+  
   <title>Tesla Deal Alert -
     @section('title')
     @show
   </title>
-   <link href="{{cdn('css/main/style.css')}}" rel="stylesheet" type="text/css">
-   <script src="{{cdn('js/jquery/jquery.js')}}"></script>
-   <script src="{{cdn('js/jquery.tablesorter.min.js')}}"></script>
+  
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  
+  <link href="{{cdn('css/main/style.css')}}" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="">
+  <script src="{{cdn('js/jquery/jquery.js')}}"></script>
+  <script src="{{cdn('js/jquery.tablesorter.min.js')}}"></script>
+  <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    @section('specific-page-addons')@show
 </head>
     <body>

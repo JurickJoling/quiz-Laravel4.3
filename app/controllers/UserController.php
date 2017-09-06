@@ -19,7 +19,7 @@ class UserController extends \BaseController
     public function index()
     {
         if (Auth::check()) {
-            $subjects = DB::table('subjects')
+            /*$subjects = DB::table('subjects')
                 ->select('subject_id', 'subject_name')
                 ->orderBy('created_at')
                 ->get();
@@ -31,10 +31,35 @@ class UserController extends \BaseController
             $marks = DB::table('marks')
                 ->select('marks.mark', 'marks.exam_id')
                 ->where('user_id', '=', Auth::user()->user_id)
-                ->get();
-            return View::make('exams.all_exams', compact('subjects', 'exams','marks'));
+                ->get();*/
+            return View::make('_layouts.default.partials.home');
         }
         return View::make('_layouts.default.guest_index');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return Response
+     */
+    public function selectModel()
+    {
+        
+        $subjects = DB::table('subjects')
+            ->select('subject_id', 'subject_name')
+            ->orderBy('created_at')
+            ->get();
+        $exams = DB::table('exams')
+            ->select('exam_id', 'exam_name', 'teacher_id', 'subject_id', 'questions_count')
+            ->orderBy('created_at')
+            ->get();
+
+        $marks = DB::table('marks')
+            ->select('marks.mark', 'marks.exam_id')
+            ->where('user_id', '=', Auth::user()->user_id)
+            ->get();
+        return View::make('exams.all_exams', compact('subjects', 'exams', 'marks'));
+        
     }
 
     /**

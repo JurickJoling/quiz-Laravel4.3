@@ -1,8 +1,8 @@
 <header>
   <nav>
-    <div id="logo">
-      <a href="/"><img src="{{asset('img/logo.png')}}" id="logo_img"></a>
-    </div>
+    
+    <a href="/"><img src="{{asset('img/logo.png')}}" id="logo_img"></a>
+    
 
     <div id="links" class="clearfix">
       <ul>
@@ -18,7 +18,7 @@
                      <li>{{link_to_route('showAllExamsToSpecTeacher','My Exams',$currentUser->user_id)}}</li>
                      <li>{{link_to_route('showMarksTeacher','Class Book',$currentUser->user_id)}}</li>
                  @elseif(normalUser())
-                     <li>{{link_to_route('showMarksUser','My Marks',$currentUser->user_id)}}</li>
+                     <!-- <li>{{link_to_route('showMarksUser','My Marks',$currentUser->user_id)}}</li> -->
                  @endif
                  <li>{{link_to_route('logout','Logout')}}</li>
                 </ul>

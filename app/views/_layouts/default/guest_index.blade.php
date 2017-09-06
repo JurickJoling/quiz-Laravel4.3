@@ -3,8 +3,11 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Tesla Deal Alert - Welcome</title>
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="{{asset('css/main/guest_style.css')}}" rel="stylesheet" type="text/css">
     <script src="{{asset('js/jquery/jquery.js')}}"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script>
 	$(document).ready(function () {
 		$('#login-button').on('click',function(){
