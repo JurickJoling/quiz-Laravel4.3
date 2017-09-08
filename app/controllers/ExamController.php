@@ -21,11 +21,11 @@ class ExamController extends \BaseController
             ->where('user_id', '=', Auth::user()->user_id)
             ->get();
 
-        if ($marks) {
-            Flash::error('You have done this exam already');
-            return Redirect::back();
-        }
-        return View::make('exams.start_exam');
+        // if ($marks) {
+        //     Flash::error('You have done this exam already');
+        //     return Redirect::back();
+        // }
+        return View::make('exams.createDeal');
     }
 
 

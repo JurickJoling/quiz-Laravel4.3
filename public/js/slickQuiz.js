@@ -18,11 +18,11 @@
 
             defaults = {
                 checkAnswerText:  'Check My Answer!',
-                nextQuestionText: 'Next &raquo;',
+                nextQuestionText: 'Next',
                 backButtonText: '',
                 completeQuizText: '',
                 tryAgainText: '',
-                questionCountText: 'Question %current of %total',
+                questionCountText: 'Step %current/%total',
                 preventUnansweredText: 'You must select at least one answer.',
                 questionTemplateText:  '%count. %text',
                 scoreTemplateText: '%score / %total',

@@ -26,10 +26,6 @@ Route::get('/', [
     'uses' => 'UserController@index'
 ]);
 
-Route::get('/model', [
-    'as' => 'selectModel',
-    'uses' => 'UserController@selectModel'
-]);
 
 Route::pattern('id', '[0-9]+');
 Route::pattern('mark', '[2-6]');
@@ -39,6 +35,10 @@ Route::group(array('before' => 'auth'), function () {
     Route::get('user/logout', [
         'as' => 'logout',
         'uses' => 'UserController@logout'
+    ]);
+    Route::get('/model', [
+        'as' => 'selectModel',
+        'uses' => 'UserController@selectModel'
     ]);
 
     //----EXAM ROUTES-----

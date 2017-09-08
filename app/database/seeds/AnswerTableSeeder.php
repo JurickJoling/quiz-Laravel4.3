@@ -12,165 +12,174 @@ class AnswerTableSeeder extends Seeder
     {
         //question1
         Answer::create([
-            'answer_name' => '5',
+            'answer_name' => '75D',
             'user_id' => '2',
             'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '1'
         ]);
         Answer::create([
-            'answer_name' => '4',
+            'answer_name' => '90D',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '1',
             'question_id' => '1'
         ]);
         Answer::create([
-            'answer_name' => '6',
+            'answer_name' => 'P90D',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '1',
             'question_id' => '1'
         ]);
         Answer::create([
-            'answer_name' => 'None of above',
+            'answer_name' => '100D',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '1',
             'question_id' => '1'
         ]);
-
+        Answer::create([
+            'answer_name' => 'P100D',
+            'user_id' => '2',
+            'correct_answer' => 'false',
+            'exam_id' => '1',
+            'question_id' => '1'
+        ]);
         //question2
         Answer::create([
-            'answer_name' => '11',
+            'answer_name' => 'Premium Upgrades Package',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '1',
             'question_id' => '2'
         ]);
         Answer::create([
-            'answer_name' => '9',
+            'answer_name' => 'Subzero Weather Package',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '1',
             'question_id' => '2'
         ]);
         Answer::create([
-            'answer_name' => '7',
+            'answer_name' => 'Ultra High Fidelity Sound',
             'user_id' => '2',
             'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '2'
         ]);
-
+        Answer::create([
+            'answer_name' => 'Smart Air Suspension',
+            'user_id' => '2',
+            'correct_answer' => 'true',
+            'exam_id' => '1',
+            'question_id' => '2'
+        ]);
+        Answer::create([
+            'answer_name' => 'High Amperage Charger',
+            'user_id' => '2',
+            'correct_answer' => 'true',
+            'exam_id' => '1',
+            'question_id' => '2'
+        ]);
         //question3
         Answer::create([
-            'answer_name' => '5',
+            'answer_name' => 'Black',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '1',
             'question_id' => '3'
         ]);
         Answer::create([
-            'answer_name' => '3',
+            'answer_name' => 'Blue',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '1',
             'question_id' => '3'
         ]);
         Answer::create([
-            'answer_name' => '4',
+            'answer_name' => 'White',
             'user_id' => '2',
             'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '3'
         ]);
         Answer::create([
-            'answer_name' => 'None of above',
+            'answer_name' => 'Red',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '1',
             'question_id' => '3'
         ]);
-
+        Answer::create([
+            'answer_name' => 'Silver',
+            'user_id' => '2',
+            'correct_answer' => 'false',
+            'exam_id' => '1',
+            'question_id' => '3'
+        ]);
         //question4
         Answer::create([
-            'answer_name' => 'YES IT IS',
+            'answer_name' => 'Minimum Price adjustment',
             'user_id' => '2',
             'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '4'
         ]);
         Answer::create([
-            'answer_name' => 'I dont understant',
+            'answer_name' => 'Maximum price',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '1',
             'question_id' => '4'
         ]);
-        Answer::create([
-            'answer_name' => 'YES IT IS!',
-            'user_id' => '2',
-            'correct_answer' => 'true',
-            'exam_id' => '1',
-            'question_id' => '4'
-        ]);
-        Answer::create([
-            'answer_name' => '7',
-            'user_id' => '2',
-            'correct_answer' => 'false',
-            'exam_id' => '1',
-            'question_id' => '4'
-        ]);
-
-        //question5
-        Answer::create([
-            'answer_name' => '9',
-            'user_id' => '2',
-            'correct_answer' => 'false',
-            'exam_id' => '1',
-            'question_id' => '5'
-        ]);
-        Answer::create([
-            'answer_name' => '12',
-            'user_id' => '2',
-            'correct_answer' => 'true',
-            'exam_id' => '1',
-            'question_id' => '5'
-        ]);
-        Answer::create([
-            'answer_name' => '27',
-            'user_id' => '2',
-            'correct_answer' => 'false',
-            'exam_id' => '1',
-            'question_id' => '5'
-        ]);
-        Answer::create([
-            'answer_name' => 'None of above',
-            'user_id' => '2',
-            'correct_answer' => 'false',
-            'exam_id' => '1',
-            'question_id' => '5'
-        ]);
+        // Answer::create([
+        //     'answer_name' => 'YES IT IS!',
+        //     'user_id' => '2',
+        //     'correct_answer' => 'true',
+        //     'exam_id' => '1',
+        //     'question_id' => '4'
+        // // ]);
+        // Answer::create([
+        //     'answer_name' => '7',
+        //     'user_id' => '2',
+        //     'correct_answer' => 'false',
+        //     'exam_id' => '1',
+        //     'question_id' => '4'
+        // ]);
 
 
         //question1
         Answer::create([
-            'answer_name' => 'PHP: Hypertext Preprocessor',
+            'answer_name' => '75D',
             'user_id' => '2',
             'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '6'
         ]);
         Answer::create([
-            'answer_name' => 'Private Home Page',
+            'answer_name' => '90D',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '2',
             'question_id' => '6'
         ]);
         Answer::create([
-            'answer_name' => 'Personal Hypertext Processor',
+            'answer_name' => 'P90D',
+            'user_id' => '2',
+            'correct_answer' => 'false',
+            'exam_id' => '2',
+            'question_id' => '6'
+        ]);
+        Answer::create([
+            'answer_name' => '100D',
+            'user_id' => '2',
+            'correct_answer' => 'false',
+            'exam_id' => '2',
+            'question_id' => '6'
+        ]);
+        Answer::create([
+            'answer_name' => 'P100D',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '2',
@@ -179,28 +188,28 @@ class AnswerTableSeeder extends Seeder
 
         //question2
         Answer::create([
-            'answer_name' => '++count',
+            'answer_name' => 'Premium Upgrades Package',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '2',
             'question_id' => '7'
         ]);
         Answer::create([
-            'answer_name' => '$count=+1',
+            'answer_name' => 'Subzero Weather Package',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '2',
             'question_id' => '7'
         ]);
         Answer::create([
-            'answer_name' => 'count++;',
+            'answer_name' => 'Ultra-High Fidelity Sound Package',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '2',
             'question_id' => '7'
         ]);
         Answer::create([
-            'answer_name' => '$count++;',
+            'answer_name' => 'Smart Air Suspension',
             'user_id' => '2',
             'correct_answer' => 'true',
             'exam_id' => '2',
@@ -208,7 +217,14 @@ class AnswerTableSeeder extends Seeder
         ]);
 
         Answer::create([
-            'answer_name' => 'None of above',
+            'answer_name' => 'High Amperage Charger',
+            'user_id' => '2',
+            'correct_answer' => 'false',
+            'exam_id' => '2',
+            'question_id' => '7'
+        ]);
+        Answer::create([
+            'answer_name' => 'Towing Package',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '2',
@@ -217,21 +233,21 @@ class AnswerTableSeeder extends Seeder
 
         //question3
         Answer::create([
-            'answer_name' => '"Hello World";',
+            'answer_name' => '"Five Seat Configuration',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '2',
             'question_id' => '8'
         ]);
         Answer::create([
-            'answer_name' => 'echo "Hello World";',
+            'answer_name' => 'Six Seat Configuration',
             'user_id' => '2',
             'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '8'
         ]);
         Answer::create([
-            'answer_name' => 'Document.Write("Hello World");',
+            'answer_name' => 'Seven Seat Configuration',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '2',
@@ -240,37 +256,51 @@ class AnswerTableSeeder extends Seeder
 
         //question4
         Answer::create([
-            'answer_name' => '$',
+            'answer_name' => 'Black',
             'user_id' => '2',
             'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '9'
         ]);
         Answer::create([
-            'answer_name' => '!',
+            'answer_name' => 'Blue',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '2',
             'question_id' => '9'
         ]);
         Answer::create([
-            'answer_name' => '&',
+            'answer_name' => 'White',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '2',
             'question_id' => '9'
         ]);
 
+        Answer::create([
+            'answer_name' => 'Red',
+            'user_id' => '2',
+            'correct_answer' => 'false',
+            'exam_id' => '2',
+            'question_id' => '9'
+        ]);
+        Answer::create([
+            'answer_name' => 'Silver',
+            'user_id' => '2',
+            'correct_answer' => 'false',
+            'exam_id' => '2',
+            'question_id' => '9'
+        ]);
         //question5
         Answer::create([
-            'answer_name' => 'true',
+            'answer_name' => 'Minimum Price adjustment',
             'user_id' => '2',
             'correct_answer' => 'false',
             'exam_id' => '2',
             'question_id' => '10'
         ]);
         Answer::create([
-            'answer_name' => 'false',
+            'answer_name' => 'Maximum price',
             'user_id' => '2',
             'correct_answer' => 'true',
             'exam_id' => '2',

@@ -20,17 +20,17 @@ class UserTableSeeder extends Seeder
 
         ]);
         User::create([
-            'fname'=>'teacher',
-            'lname'=>'teacher',
-            'email'=>'teacher@teacher.com',
+            'fname'=>'editor',
+            'lname'=>'editor',
+            'email'=>'editor@editor.com',
             'phone_number'=>'1111111112',
             'status'=>'2',
             'password'=>Hash::make('teacher')
         ]);
         User::create([
-            'fname' => 'student',
-            'lname' => 'student',
-            'email' => 'student@student.com',
+            'fname' => 'user',
+            'lname' => 'user',
+            'email' => 'user@user.com',
             'phone_number' => '1111111113',
             'status' => '1',
             'password' => Hash::make('student')

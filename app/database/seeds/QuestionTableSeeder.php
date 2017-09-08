@@ -11,53 +11,53 @@ class QuestionTableSeeder extends Seeder
     public function run()
     {
         Question::create([
-            'question_name' => '2+3 = ?',
+            'question_name' => 'Desired Trim(s)',
             'user_id' => '2',
             'exam_id' => '1',
         ]);
         Question::create([
-            'question_name' => '3+4 = ?',
+            'question_name' => 'Required Packages',
             'user_id' => '2',
             'exam_id' => '1',
         ]);
         Question::create([
-            'question_name' => '2+2 = ?',
+            'question_name' => 'Desired Colors',
             'user_id' => '2',
             'exam_id' => '1',
         ]);
         Question::create([
-            'question_name' => 'Is it easy ? (2 correct answers)',
+            'question_name' => 'Required Price',
             'user_id' => '2',
             'exam_id' => '1',
         ]);
         Question::create([
-            'question_name' => '3+3*3 = ?',
+            'question_name' => 'Desired Seats',
             'user_id' => '2',
             'exam_id' => '1',
         ]);
 
         Question::create([
-            'question_name' => 'What does PHP stand for?',
+            'question_name' => 'Desired Trim(s)',
             'user_id' => '2',
             'exam_id' => '2',
         ]);
         Question::create([
-            'question_name' => 'What is the correct way to add 1 to the $count variable?',
+            'question_name' => 'Required Packages',
             'user_id' => '2',
             'exam_id' => '2',
         ]);
         Question::create([
-            'question_name' => 'How do you write "Hello World" in PHP?',
+            'question_name' => 'Desired Seats',
             'user_id' => '2',
             'exam_id' => '2',
         ]);
         Question::create([
-            'question_name' => 'All variables in PHP start with which symbol?',
+            'question_name' => 'Desired Color(s)',
             'user_id' => '2',
             'exam_id' => '2',
         ]);
         Question::create([
-            'question_name' => 'When using the POST method, variables are displayed in the URL?',
+            'question_name' => 'Required Price',
             'user_id' => '2',
             'exam_id' => '2',
         ]);

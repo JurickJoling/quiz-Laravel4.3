@@ -1,101 +1,6 @@
 /* `XHTML, HTML4, HTML5 Reset
 ----------------------------------------------------------------------------------------------------*/
 
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-dialog,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-font,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-hr,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-main,
-mark,
-menu,
-meter,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-progress,
-q,
-rp,
-rt,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video,
-xmp {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-}
 
 article,
 aside,
@@ -389,28 +294,42 @@ header {
 #########=section-all-exams#########
 #
 */
-#section-all-exams {
+.section-all-deals {
     padding-top: 60px;
     padding-bottom: 120px;
 }
 
-#section-all-exams h3 {
+.section-all-deals{
     cursor: default;
-    font-size: 48px;
-    color: #00b0e6;
-    margin: 15px 240px;
+    /*margin: 15px 240px;*/
 }
+.model-list{
+    text-align: center;
+}
+.main-section{
+    width: 90%; 
+    min-height: 500px; 
+    margin: 0 auto; 
+    text-align: center;
+    border: 2px solid black;
 
-#section-all-exams ul {
-    margin: auto;
+}
+.main-section h1{
+    margin-top: 30px;
+    font-weight: bold;
+}
+.main-section .clearfix{
+    margin-top: 65px;
+}
+.section-all-deals ul {
     width: 65%;
 }
 
-#section-all-exams ul li {
+.section-all-deals ul li {
     float: left;
 }
 
-#section-all-exams ul li div {
+.section-all-deals ul li div {
     margin: 3px;
 }
 
@@ -432,33 +351,6 @@ header {
 .exam-name {
     height: 60px;
     overflow: hidden;
-}
-
-#section-all-exams ul li {
-    display: block;
-    color: white;
-    font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    width: 240px;
-    height: 120px;
-    text-align: center;
-    margin: 15px;
-    cursor: pointer;
-}
-
-#section-all-exams ul li:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-#section-all-exams h3:last-child {
-    display: none;
-}
-
-#section-all-exams p {
-    text-align: center;
-    color: white;
-    font-size: 18px;
 }
 
 /*
@@ -809,17 +701,20 @@ ul.responses li {
     width: 1px;
 }
 
-.nextQuestion:hover {
+.nextQuestion {
     background: #ff9900;
+    text-decoration: none;
+    margin: 0 auto;
 }
 
 .nextQuestion {
     font-size: 1.53em;
     height: 40px;
     background: #ffa31a;
-    margin: 5%;
+    width: 100px;
+    vertical-align: middle;
+    padding: 5px 0 0 0;
     text-align: center;
-    padding-top: 10px;
 }
 
 #start-button {
@@ -832,38 +727,45 @@ ul.responses li {
 }
 
 #start-exam-container {
+    margin-top: 60px;
     width: 50%;
     margin: 5% auto;
     border-radius: 15px;
-    background-color: #00b0e6;
 }
 
 .quizArea {
-    color: white;
+    color: black;
 }
 
 .quizArea h3 {
-    font-size: 78px;
+    font-size: 36px;
     text-align: center;
+    margin-top: 0;
 }
 
 .questionCount {
-    font-size: 28px;
+    font-size: 20px;
+    padding-top: 7px;
     color: black;
-    padding: 2%;
+    position: absolute;
 }
-
+ul.answers{
+    margin-top: 20px;
+}
 .answers li {
     display: block;
     font-size: 24px;
     margin: 1%;
+
 }
 
 .answers li input,
 .answers li label {
     cursor: pointer;
 }
-
+.answers li label{
+    margin-left: 15px;
+}
 #questionCount {
     font-size: 230px;
 }
