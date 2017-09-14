@@ -44,11 +44,11 @@ Route::group(array('before' => 'auth'), function () {
     //----EXAM ROUTES-----
     Route::get('exam/{id}', [
         'as' => 'startExam',
-        'uses' => 'ExamController@index'
+        'uses' => ':CreateController@index'
     ]);
     Route::post('exam/{id}', [
         'as' => 'quiz',
-        'uses' => 'ExamController@getQuiz',
+        'uses' => 'CreateController@getQuiz',
     ]);
 
     //----EXAM ROUTES END-----
@@ -75,33 +75,33 @@ Route::group(array('before' => 'auth'), function () {
         //----EXAM ROUTES-----
         Route::get('exam/create', [
             'as' => 'createExam',
-            'uses' => 'ExamController@create'
+            'uses' => 'CreateController@create'
         ]);
 
 
         Route::post('exam/create', [
             'as' => 'storeExam',
-            'uses' => 'ExamController@store'
+            'uses' => 'CreateController@store'
         ]);
 
         Route::get('exam/{id}/edit', [
             'as' => 'editExam',
-            'uses' => 'ExamController@edit'
+            'uses' => 'CreateController@edit'
         ]);
 
         Route::get('exam/user/{id}', [
             'as' => 'showAllExamsToSpecTeacher',
-            'uses' => 'ExamController@showAllExamsToSpecTeacher'
+            'uses' => 'CreateController@showAllExamsToSpecTeacher'
         ]);
 
         Route::patch('exam/{id}', [
             'as' => 'updateExam',
-            'uses' => 'ExamController@update'
+            'uses' => 'CreateController@update'
         ]);
 
         Route::delete('exam/{id}', [
             'as' => 'deleteExam',
-            'uses' => 'ExamController@destroy'
+            'uses' => 'CreateController@destroy'
         ]);
         //----EXAM ROUTES END-----
 

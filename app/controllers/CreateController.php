@@ -25,7 +25,7 @@ class ExamController extends \BaseController
         //     Flash::error('You have done this exam already');
         //     return Redirect::back();
         // }
-        return View::make('exams.createDeal');
+        return View::make('create.createDeal');
     }
 
 
@@ -77,7 +77,7 @@ class ExamController extends \BaseController
     public function create()
     {
         $subjects = DB::table('subjects')->get();
-        return View::make('exams.create_edit', compact('subjects'));
+        return View::make('create.create_edit', compact('subjects'));
     }
 
     /**
@@ -150,7 +150,7 @@ class ExamController extends \BaseController
     public function showAllExamsToSpecTeacher($teacherId)
     {
         $exams = Exam::where('teacher_id', '=', $teacherId)->get();
-        return View::make('exams.show_all_exams_to_spec_teacher', compact('exams'));
+        return View::make('create.show_all_exams_to_spec_teacher', compact('exams'));
 
     }
 
@@ -172,7 +172,7 @@ class ExamController extends \BaseController
             ->get();
         $exam = Exam::findOrFail($examId);
         $current_subject = $exam->subject()->get();
-        return View::make('exams.create_edit', compact('exam', 'subjects', 'current_subject'));
+        return View::make('create.create_edit', compact('exam', 'subjects', 'current_subject'));
     }
 
 

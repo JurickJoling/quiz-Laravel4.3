@@ -21,28 +21,28 @@ class AnswerTableSeeder extends Seeder
         Answer::create([
             'answer_name' => '90D',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '1'
         ]);
         Answer::create([
             'answer_name' => 'P90D',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '1'
         ]);
         Answer::create([
             'answer_name' => '100D',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '1'
         ]);
         Answer::create([
             'answer_name' => 'P100D',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '1'
         ]);
@@ -50,14 +50,14 @@ class AnswerTableSeeder extends Seeder
         Answer::create([
             'answer_name' => 'Premium Upgrades Package',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '2'
         ]);
         Answer::create([
             'answer_name' => 'Subzero Weather Package',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '2'
         ]);
@@ -86,14 +86,14 @@ class AnswerTableSeeder extends Seeder
         Answer::create([
             'answer_name' => 'Black',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '3'
         ]);
         Answer::create([
             'answer_name' => 'Blue',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '3'
         ]);
@@ -107,14 +107,14 @@ class AnswerTableSeeder extends Seeder
         Answer::create([
             'answer_name' => 'Red',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '3'
         ]);
         Answer::create([
             'answer_name' => 'Silver',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '3'
         ]);
@@ -129,7 +129,7 @@ class AnswerTableSeeder extends Seeder
         Answer::create([
             'answer_name' => 'Maximum price',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '1',
             'question_id' => '4'
         ]);
@@ -143,7 +143,7 @@ class AnswerTableSeeder extends Seeder
         // Answer::create([
         //     'answer_name' => '7',
         //     'user_id' => '2',
-        //     'correct_answer' => 'false',
+        //     'correct_answer' => 'true',
         //     'exam_id' => '1',
         //     'question_id' => '4'
         // ]);
@@ -160,28 +160,28 @@ class AnswerTableSeeder extends Seeder
         Answer::create([
             'answer_name' => '90D',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '6'
         ]);
         Answer::create([
             'answer_name' => 'P90D',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '6'
         ]);
         Answer::create([
             'answer_name' => '100D',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '6'
         ]);
         Answer::create([
             'answer_name' => 'P100D',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '6'
         ]);
@@ -190,21 +190,21 @@ class AnswerTableSeeder extends Seeder
         Answer::create([
             'answer_name' => 'Premium Upgrades Package',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '7'
         ]);
         Answer::create([
             'answer_name' => 'Subzero Weather Package',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '7'
         ]);
         Answer::create([
             'answer_name' => 'Ultra-High Fidelity Sound Package',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '7'
         ]);
@@ -219,14 +219,14 @@ class AnswerTableSeeder extends Seeder
         Answer::create([
             'answer_name' => 'High Amperage Charger',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '7'
         ]);
         Answer::create([
             'answer_name' => 'Towing Package',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '7'
         ]);
@@ -235,7 +235,7 @@ class AnswerTableSeeder extends Seeder
         Answer::create([
             'answer_name' => '"Five Seat Configuration',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '8'
         ]);
@@ -249,7 +249,7 @@ class AnswerTableSeeder extends Seeder
         Answer::create([
             'answer_name' => 'Seven Seat Configuration',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '8'
         ]);
@@ -265,14 +265,14 @@ class AnswerTableSeeder extends Seeder
         Answer::create([
             'answer_name' => 'Blue',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '9'
         ]);
         Answer::create([
             'answer_name' => 'White',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '9'
         ]);
@@ -280,14 +280,14 @@ class AnswerTableSeeder extends Seeder
         Answer::create([
             'answer_name' => 'Red',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '9'
         ]);
         Answer::create([
             'answer_name' => 'Silver',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '9'
         ]);
@@ -295,7 +295,7 @@ class AnswerTableSeeder extends Seeder
         Answer::create([
             'answer_name' => 'Minimum Price adjustment',
             'user_id' => '2',
-            'correct_answer' => 'false',
+            'correct_answer' => 'true',
             'exam_id' => '2',
             'question_id' => '10'
         ]);
