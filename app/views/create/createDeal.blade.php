@@ -24,7 +24,7 @@
                 </div>
                 
                 <div class="questions">
-                    <li class="question" id="question0" style="display: list-item;">
+                    <!-- <li class="question" id="question0" style="display: list-item;">
                         <div class="questionCount">Step <span class="current">1</span>/<span class="total">5</span></div>
                         <h3>1. Desired Trim(s)</h3>
                         <ul class="answers">
@@ -128,7 +128,7 @@
                         </ul>
                         <a href="#" class="button nextQuestion lastQuestion checkAnswer" role="button">Next</a>
                     </li>
-                </div>
+                </div> -->
             </div>
 
             <div class="quizResults">
@@ -144,7 +144,7 @@
 
     </section>
     
-    <!-- <script>
+    <script>
     $(document).ready(function () {
         // $('#start-button').click(load);
         var getQuizUrl = $(location).attr('href'); //getting the url with a specific quiz
@@ -167,5 +167,5 @@
         });
 
     });
-    </script> -->
+    </script>
 @stop

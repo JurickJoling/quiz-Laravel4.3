@@ -44,7 +44,7 @@ Route::group(array('before' => 'auth'), function () {
     //----EXAM ROUTES-----
     Route::get('exam/{id}', [
         'as' => 'startExam',
-        'uses' => ':CreateController@index'
+        'uses' => 'CreateController@index'
     ]);
     Route::post('exam/{id}', [
         'as' => 'quiz',
@@ -54,111 +54,111 @@ Route::group(array('before' => 'auth'), function () {
     //----EXAM ROUTES END-----
 
     //----MARKS ROUTES----
-    Route::get('marks/{id}', [
-        'as' => 'showMarksUser',
-        'uses' => 'MarkController@showToUser'
-    ]);
-    Route::post('exam/{id}/mark/{mark}', [
-        'as' => 'saveMark',
-        'uses' => 'MarkController@store'
-    ]);
-    //----END MARKS-----
+    // Route::get('marks/{id}', [
+    //     'as' => 'showMarksUser',
+    //     'uses' => 'MarkController@showToUser'
+    // ]);
+    // Route::post('exam/{id}/mark/{mark}', [
+    //     'as' => 'saveMark',
+    //     'uses' => 'MarkController@store'
+    // ]);
+    // //----END MARKS-----
 
-    Route::group(array('before' => 'auth_teacher_and_admin'), function () {
-        //----MARKS ROUTES----
-        Route::get('classbook/{id}', [
-            'as' => 'showMarksTeacher',
-            'uses' => 'MarkController@showToTeacher'
-        ]);
-        //----END MARKS-----
+    // Route::group(array('before' => 'auth_teacher_and_admin'), function () {
+    //     //----MARKS ROUTES----
+    //     Route::get('classbook/{id}', [
+    //         'as' => 'showMarksTeacher',
+    //         'uses' => 'MarkController@showToTeacher'
+    //     ]);
+    //     //----END MARKS-----
 
-        //----EXAM ROUTES-----
-        Route::get('exam/create', [
-            'as' => 'createExam',
-            'uses' => 'CreateController@create'
-        ]);
+    //     //----EXAM ROUTES-----
+    //     Route::get('exam/create', [
+    //         'as' => 'createExam',
+    //         'uses' => 'CreateController@create'
+    //     ]);
 
 
-        Route::post('exam/create', [
-            'as' => 'storeExam',
-            'uses' => 'CreateController@store'
-        ]);
+    //     Route::post('exam/create', [
+    //         'as' => 'storeExam',
+    //         'uses' => 'CreateController@store'
+    //     ]);
 
-        Route::get('exam/{id}/edit', [
-            'as' => 'editExam',
-            'uses' => 'CreateController@edit'
-        ]);
+    //     Route::get('exam/{id}/edit', [
+    //         'as' => 'editExam',
+    //         'uses' => 'CreateController@edit'
+    //     ]);
 
-        Route::get('exam/user/{id}', [
-            'as' => 'showAllExamsToSpecTeacher',
-            'uses' => 'CreateController@showAllExamsToSpecTeacher'
-        ]);
+    //     Route::get('exam/user/{id}', [
+    //         'as' => 'showAllExamsToSpecTeacher',
+    //         'uses' => 'CreateController@showAllExamsToSpecTeacher'
+    //     ]);
 
-        Route::patch('exam/{id}', [
-            'as' => 'updateExam',
-            'uses' => 'CreateController@update'
-        ]);
+    //     Route::patch('exam/{id}', [
+    //         'as' => 'updateExam',
+    //         'uses' => 'CreateController@update'
+    //     ]);
 
-        Route::delete('exam/{id}', [
-            'as' => 'deleteExam',
-            'uses' => 'CreateController@destroy'
-        ]);
-        //----EXAM ROUTES END-----
+    //     Route::delete('exam/{id}', [
+    //         'as' => 'deleteExam',
+    //         'uses' => 'CreateController@destroy'
+    //     ]);
+    //     //----EXAM ROUTES END-----
 
-        //----QUESTION ROUTES-----
-        Route::post('question/add/{id}', [
-            'as' => 'addMoreQuestions',
-            'uses' => 'QuestionController@store'
-        ]);
-        Route::get('question/{id}/edit', [
-            'as' => 'editQuestions',
-            'uses' => 'QuestionController@edit'
-        ]);
-        Route::patch('question/update', [
-            'as' => 'updateQuestions',
-            'uses' => 'QuestionController@update'
-        ]);
-        Route::delete('question/delete/{id}', [
-            'as' => 'deleteQuestion',
-            'uses' => 'QuestionController@destroy'
-        ]);
-        //----QUESTION ROUTES END-----
+    //     //----QUESTION ROUTES-----
+    //     Route::post('question/add/{id}', [
+    //         'as' => 'addMoreQuestions',
+    //         'uses' => 'QuestionController@store'
+    //     ]);
+    //     Route::get('question/{id}/edit', [
+    //         'as' => 'editQuestions',
+    //         'uses' => 'QuestionController@edit'
+    //     ]);
+    //     Route::patch('question/update', [
+    //         'as' => 'updateQuestions',
+    //         'uses' => 'QuestionController@update'
+    //     ]);
+    //     Route::delete('question/delete/{id}', [
+    //         'as' => 'deleteQuestion',
+    //         'uses' => 'QuestionController@destroy'
+    //     ]);
+    //     //----QUESTION ROUTES END-----
 
-        //----ANSWER ROUTES-----
-        Route::post('answer/update', [
-            'as' => 'updateAnswers',
-            'uses' => 'AnswerController@update'
-        ]);
+    //     //----ANSWER ROUTES-----
+    //     Route::post('answer/update', [
+    //         'as' => 'updateAnswers',
+    //         'uses' => 'AnswerController@update'
+    //     ]);
 
-        Route::delete('answer/delete/{id}', [
-            'as' => 'deleteAnswer',
-            'uses' => 'AnswerController@destroy'
-        ]);
+    //     Route::delete('answer/delete/{id}', [
+    //         'as' => 'deleteAnswer',
+    //         'uses' => 'AnswerController@destroy'
+    //     ]);
 
-        Route::get('answer/edit/{id}', [
-            'as' => 'editAnswers',
-            'uses' => 'AnswerController@edit'
-        ]);
+    //     Route::get('answer/edit/{id}', [
+    //         'as' => 'editAnswers',
+    //         'uses' => 'AnswerController@edit'
+    //     ]);
 
-        Route::post('answer/add/{id}', [
-            'as' => 'addAnswer',
-            'uses' => 'AnswerController@store'
-        ]);
-        //----ANSWER ROUTES END-----
+    //     Route::post('answer/add/{id}', [
+    //         'as' => 'addAnswer',
+    //         'uses' => 'AnswerController@store'
+    //     ]);
+    //     //----ANSWER ROUTES END-----
 
-        //----SUBJECT ROUTES END-----
-        Route::get('subject/create', [
-            'as' => 'createSubject',
-            'uses' => 'SubjectController@create'
-        ]);
+    //     //----SUBJECT ROUTES END-----
+    //     Route::get('subject/create', [
+    //         'as' => 'createSubject',
+    //         'uses' => 'SubjectController@create'
+    //     ]);
 
-        Route::post('subject/create', [
-            'as' => 'storeSubject',
-            'uses' => 'SubjectController@store'
-        ]);
-        //----SUBJECT ROUTES END-----
+    //     Route::post('subject/create', [
+    //         'as' => 'storeSubject',
+    //         'uses' => 'SubjectController@store'
+    //     ]);
+    //     //----SUBJECT ROUTES END-----
 
-    });//END ADMIN TEACHER FILTER
+    // });//END ADMIN TEACHER FILTER
 
 
 
